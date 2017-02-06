@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
+  template:`
+    <h1>{{title}}</h1>
+    <h2>{{ 'now is '+ getDate() }}</h2>`,
+  //templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
