@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<app-header></app-header>
+
+<!-- 使用event binding來綁定addTodoItem事件到AppComponent的addTodo -->
+<app-addForm (addTodoItem)=addTodo($event)></app-addForm>
+
+<app-todoItems [items]="todoItems" (deleteItem)=delTodo($event)></app-todoItems>

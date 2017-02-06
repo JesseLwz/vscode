@@ -4,11 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { AddFormComponent } from './addForm/addForm.component';
+import { TodoItemsComponent } from './todoItems/todoItems.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
-  ],
+    AppComponent,
+    HeaderComponent,
+    AddFormComponent,
+    TodoItemsComponent
+],
   imports: [
     BrowserModule,
     FormsModule,
